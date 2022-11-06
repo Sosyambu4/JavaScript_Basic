@@ -52,3 +52,30 @@ if (ageUser >= 18) {
 }
 
 const checkMyAge = ageUser >= 18 ? console.log("User is adult") : console.log("User is underage"); 
+
+/* Zadanie 8 */
+ let a = 5;
+let b = 4;
+
+
+function getBiggerNumber(a, b){
+    if (a > b) {
+        return a;
+    } else if (b > a) {
+        return  b;
+    }
+} 
+const result = a > b ? console.log(a) : console.log(b); 
+// Zadanie 9.
+
+ function ItemsInCart(items) {
+    let count = items === 1 ? "item" : 'items';
+    return `You have ${items} ${count} in your cart.`;
+}
+
+console.log(ItemsInCart(1));
+console.log(ItemsInCart(6));
+
+let countofItems = 5;
+
+console.log(`You have ${countofItems} item${countofItems === 1 ? '': 's' } in your card`); 
