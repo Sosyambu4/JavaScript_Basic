@@ -111,3 +111,51 @@ function shouldTakeUmbrella(isRaining,hasJacket,longTrip,isSummer) {
     return false;
 }
 shouldTakeUmbrella(true,false,false,false); 
+
+// Zadanie 12.
+ function isEqual(firstNum, secondNum) {
+    if (firstNum === secondNum) {
+        return true;
+    } else {
+        return false;}
+}
+console.log(isEqual(2,2));
+console.log(isEqual(2100,2));
+console.log(isEqual(3,2));
+console.log(isEqual(2,'2')); 
+
+
+// Zadanie 13.
+ function canRideRollerCoaster(age, height){
+    if (age >= 18 && height >= 175) {
+        console.log("Can ride!");
+        return true;
+    } else {
+        console.log("Sorry kiddo, no can do.");
+        return false;
+
+    }
+
+} 
+
+/* const RollerCoaster = (age, height) => {
+switch(age) {
+    case age > 18 && height > 175:
+        console.log("Can ride!");
+        return true;
+        break;
+    case age < 18 && height < 175:
+        console.log("Sorry kiddo, no can do.");
+        return false;
+        break
+    default: {
+        return false;
+        console.log("Sorry kiddo, no can do.");
+        break;}
+}
+}  */
+console.log(RollerCoaster(19, 180)); // false
+canRideRollerCoaster(19, 150); // false
+canRideRollerCoaster(13, 150); // false
+canRideRollerCoaster(19, 190); // true 
+ 
