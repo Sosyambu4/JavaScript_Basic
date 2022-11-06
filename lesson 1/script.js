@@ -79,3 +79,5 @@ console.log(ItemsInCart(6));
 let countofItems = 5;
 
 console.log(`You have ${countofItems} item${countofItems === 1 ? '': 's' } in your card`); 
+
+// Zadanie 10
