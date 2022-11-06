@@ -80,4 +80,34 @@ let countofItems = 5;
 
 console.log(`You have ${countofItems} item${countofItems === 1 ? '': 's' } in your card`); 
 
-// Zadanie 10
+
+// Zadanie 10.
+
+ const input = prompt("podaj swoj wiek");
+console.log(input);
+
+if (input > 125 || input < 0 ) {
+    console.log(`You provided incorrect age.`);
+} else if ( input > 35) {
+    console.log(`You could be a president!`);
+} else if ( input > 18) {
+    console.log(`At least you can have a beer.`);
+} else {
+    console.log(`You cannot be a president and can't even drink beer :(`);
+} 
+// Zadanie 11.
+const isRaining = true;
+const hasJacket = true;
+const longTrip = false;
+const isSummer = false;
+
+function shouldTakeUmbrella(isRaining,hasJacket,longTrip,isSummer) {
+    if ((isRaining && !isSummer) || (longTrip)) {
+    return true;
+} 
+    if(isRaining && !hasJacket) {
+        return true;
+    }
+    return false;
+}
+shouldTakeUmbrella(true,false,false,false); 
