@@ -159,3 +159,23 @@ canRideRollerCoaster(19, 150); // false
 canRideRollerCoaster(13, 150); // false
 canRideRollerCoaster(19, 190); // true 
  
+// Zadanie 14.
+
+const alphabeticalOrder = (name) => name.toLowerCase().split('').sort().join('');
+
+console.log(alphabeticalOrder('Wladyslaw'));
+console.log(alphabeticalOrder('Jeśli ma więcej niż 18 lat'));
+
+// Zadanie 15.
+
+const reverseText = (string) => console.log(string.split('').reverse().join(''));
+reverseText("javascript");
+
+// Zadanie 16.
+
+const getInitials = (name) => {
+let words = name.split(' ');
+return `${words[0][0]}.${words[1][0]}`;
+}
+
+console.log(getInitials('Harry John Teddy'));
