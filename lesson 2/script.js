@@ -39,8 +39,31 @@ thirdJobOffer.querySelector('h3').innerText = 'Python Developer';
 fourJobOffer.querySelector('h3').innerText = 'Senior Java Developer';
 // Zadanie 3.
 
-// Zadanie 4.
+const jobsListed = document.querySelector('.jobs-listed');
 
+const howManyJobs = jobsListed.querySelector('span');
+
+const allJobs = document.querySelectorAll('.job__card');
+
+howManyJobs.innerText = allJobs.length;
+// Zadanie 4.
+const toggleButton = document.querySelector('.toggle__button');
+
+toggleButton.addEventListener('click', () => {
+    document.body.classList.add('dark-theme')
+});
 // Zadanie 5.
 
+const searchEngine = document.querySelector('#search');
+searchEngine.addEventListener('keyup',(event) => {
+    const value = event.target.value;
+allJobs.forEach((job) => {
+    const jobTitle = job.querySelector('h3').innerText;
+    if(!jobTitle.toLocaleLowerCase().includes(value.toLocaleLowerCase())){
+job.style.display = "none";
+    } else {
+        job.style.display = 'block';
+    }
+})
+});
 // Zadanie 6.
